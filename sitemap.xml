@@ -5,13 +5,4 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <url>
-    <loc>https://docoza.com/merge-pdf</loc>
-  </url>
-  <url>
-    <loc>https://docoza.com/split-pdf</loc>
-  </url>
-  <url>
-    <loc>https://docoza.com/compress-pdf</loc>
-  </url>
 </urlset>
