@@ -1,92 +1,193 @@
-<!DOCTYPE html><html>
+<!DOCTYPE html>
+<html>
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E5QVW43Z2P"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-E5QVW43Z2P');
-  </script>
-  <!-- End Google Analytics -->
   <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta
-          name="description"
-          content="Free online PDF tools to merge, split, compress, convert, edit, protect and manage PDF files. Fast and easy to use with Docoza."
-  >
 
-  <!-- iOS meta tags & icons -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Docoza">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <!-- ========================================================= -->
+  <!-- SEO -->
+  <!-- ========================================================= -->
 
   <title>Docoza – Free Online PDF Tools</title>
-  <link rel="manifest" href="manifest.json">
 
-  <!--
-    pdf-lib powers PdfOrganizeBridge (web/js/pdf_organize_bridge.js), used by
-    lib/services/pdf/web/pdf_lib_bridge.dart for true structural PDF page
-    copies (Merge/Split/Extract/Delete/Rearrange/Organize/Rotate) and crop-box
-    edits (Crop PDF) — see the architecture note atop
-    lib/services/pdf/tools/organize_tools.dart for why this replaced the
-    Syncfusion createTemplate() approach. Must load before pdf_organize_bridge.js.
-  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
-  <script src="js/pdf_organize_bridge.js"></script>
+  <meta
+          name="description"
+          content="Docoza provides free online PDF tools to merge, split, compress, convert, edit, protect and manage PDF files quickly and easily."
+  >
 
-  <!-- Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6267503212159634"
-          crossorigin="anonymous"></script>
+  <meta
+          name="keywords"
+          content="Docoza, PDF tools, PDF editor, PDF scanner, PDF converter, merge PDF, split PDF, compress PDF, convert PDF, edit PDF, online PDF tools"
+  >
 
-  ```html
-  <meta name="robots" content="index, follow">
   <meta name="author" content="Docoza">
 
-  <!-- Open Graph -->
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://docoza.com/">
+
+  <!-- ========================================================= -->
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <!-- ========================================================= -->
+
   <meta property="og:site_name" content="Docoza">
-  <meta property="og:title" content="Docoza – Free Online PDF Tools">
-  <meta property="og:description" content="Free online PDF tools to merge, split, compress, convert, edit, protect and manage PDF files. Fast and easy to use with Docoza.">
-  <meta property="og:url" content="https://docoza.com/">
-  <meta property="og:type" content="website">
 
-  <!-- Twitter -->
+  <meta
+          property="og:title"
+          content="Docoza – Free Online PDF Tools"
+  >
+
+  <meta
+          property="og:description"
+          content="Free online PDF tools to merge, split, compress, convert, edit, protect and manage PDF files."
+  >
+
+  <meta
+          property="og:url"
+          content="https://docoza.com/"
+  >
+
+  <meta
+          property="og:type"
+          content="website"
+  >
+
+  <meta
+          property="og:image"
+          content="https://docoza.com/favicon.png"
+  >
+
+  <!-- ========================================================= -->
+  <!-- Twitter / X -->
+  <!-- ========================================================= -->
+
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Docoza – Free Online PDF Tools">
-  <meta name="twitter:description" content="Free online PDF tools to merge, split, compress, convert, edit, protect and manage PDF files.">
-  ```
 
+  <meta
+          name="twitter:title"
+          content="Docoza – Free Online PDF Tools"
+  >
+
+  <meta
+          name="twitter:description"
+          content="Free online PDF tools to merge, split, compress, convert, edit, protect and manage PDF files."
+  >
+
+  <meta
+          name="twitter:image"
+          content="https://docoza.com/favicon.png"
+  >
+
+  <!-- ========================================================= -->
+  <!-- Favicon -->
+  <!-- ========================================================= -->
+
+  <link
+          rel="icon"
+          type="image/png"
+          href="favicon.png"
+  >
+
+  <!-- ========================================================= -->
+  <!-- Mobile / Android -->
+  <!-- ========================================================= -->
+
+  <meta
+          name="mobile-web-app-capable"
+          content="yes"
+  >
+
+  <meta
+          name="apple-mobile-web-app-capable"
+          content="yes"
+  >
+
+  <meta
+          name="apple-mobile-web-app-status-bar-style"
+          content="black"
+  >
+
+  <meta
+          name="apple-mobile-web-app-title"
+          content="Docoza"
+  >
+
+  <link
+          rel="apple-touch-icon"
+          href="icons/Icon-192.png"
+  >
+
+  <!-- ========================================================= -->
+  <!-- Viewport -->
+  <!-- ========================================================= -->
+
+  <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  >
+
+  <!-- ========================================================= -->
+  <!-- Web App Manifest -->
+  <!-- ========================================================= -->
+
+  <link
+          rel="manifest"
+          href="manifest.json"
+  >
+
+  <!-- ========================================================= -->
+  <!-- Google Analytics -->
+  <!-- ========================================================= -->
+
+  <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-E5QVW43Z2P">
+  </script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-E5QVW43Z2P');
+  </script>
+
+  <!-- ========================================================= -->
+  <!-- PDF Library -->
+  <!-- ========================================================= -->
+
+  <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js">
+  </script>
+
+  <script src="js/pdf_organize_bridge.js"></script>
+
+  <!-- ========================================================= -->
+  <!-- Google AdSense -->
+  <!-- ========================================================= -->
+
+  <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6267503212159634"
+          crossorigin="anonymous">
+  </script>
 
 </head>
-<body>
-  <!--
-    You can customize the "flutter_bootstrap.js" script.
-    This is useful to provide a custom configuration to the Flutter loader
-    or to give the user feedback during the initialization process.
 
-    For more details:
-    * https://docs.flutter.dev/platform-integration/web/initialization
-  -->
-  <script src="flutter_bootstrap.js" async></script>
+<body>
+
+<!-- ========================================================= -->
+<!-- Flutter -->
+<!-- ========================================================= -->
+
+<script src="flutter_bootstrap.js" async></script>
+
 </body>
 </html>
